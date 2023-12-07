@@ -4,27 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">
-        <img width="55" height="50" src="./images/logo.png" alt="logo" />
-        <p>ХАТИНА</p>
-        <p>притулок для тварин</p>
+    <header class="header">
+      <a class="header-logo" href="./index.html">
+        <img
+          class="header-image"
+          width="55"
+          height="50"
+          src="./images/logo.png"
+          alt="logo"
+        />
+        <p class="header-house">ХАТИНА</p>
+        <p class="header-slogan">притулок для тварин</p>
       </a>
-      <nav>
-        <ul>
-          <li><a href="">Домашня</a></li>
-          <li><a href="">Про нас</a></li>
-          <li><a href="">Вірні друзі</a></li>
-          <li><a href="">Наші умови</a></li>
-          <li><a href="">Локація</a></li>
-          <li><a href="">Контакти</a></li>
+      <nav class="header-navigation">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="#">Домашня</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Про нас</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Вірні друзі</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Наші умови</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Наші умови</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Наші умови</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Локація</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <select id="size" name="size">
-        <option value="xs">UA</option>
-        <option value="s">UK</option>
+      <select class="header-switcher" id="size" name="size">
+        <option class="header-languageUA" value="xs">UA</option>
+        <option class="header-" value="s">UK</option>
         <option value="m" selected>ES</option>
         <option value="l">FR</option>
       </select>
@@ -32,7 +63,7 @@
     </header>
     <main>
       <!-- hero section -->
-      <section>
+      <section class="hero">
         <h1>Цим оченятам дуже потрібні любов і турбота</h1>
         <p>
           Вірний друг радітиме тобі завжди. Йому потрібно дуже мало - теплий дім
@@ -42,7 +73,7 @@
         <img width="538" height="680" src="./images/dog.png" alt="dog" />
       </section>
       <!-- about -->
-      <section>
+      <section class="about">
         <img src="./images/dog2.png" alt="dog" />
         <div>
           <h2>Про нас</h2>
@@ -58,7 +89,7 @@
         </div>
       </section>
       <!-- friend -->
-      <section>
+      <section class="friend">
         <h2>Вибери собі вірного друга</h2>
         <p>Не купуй – прихисти, адже справжня дружба не продається!</p>
         <ul>
@@ -96,7 +127,7 @@
         <button type="button">Показати більше</button>
       </section>
       <!-- conditions -->
-      <section>
+      <section class="conditions">
         <h2>Наші умови</h2>
         <ul>
           <li>
@@ -123,7 +154,7 @@
         </ul>
       </section>
       <!-- location -->
-      <section>
+      <section class="location">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d84547.94765808889!2d24.96359421142577!3d48.53086749972008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736d2957ef4cbdf%3A0xc1e2a9b84387bf00!2z0JrQvtC70L7QvNC40Y8sINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDc4MjAw!5e0!3m2!1suk!2sge!4v1697101822106!5m2!1suk!2sge"
           width="600"
@@ -135,7 +166,7 @@
         ></iframe>
       </section>
       <!-- contacts -->
-      <section>
+      <section class="contacts">
         <h2>Наші контакти</h2>
         <p>У вас є питання? Зв'яжіться з нами безпосередньо</p>
         <address>
@@ -166,7 +197,7 @@
         </address>
       </section>
       <!-- help -->
-      <section>
+      <section class="help">
         <h2>Як допомогти</h2>
         <h3>Бажаєте допомогти притулку?</h3>
         <p>
@@ -175,123 +206,109 @@
         </p>
         <button type="button">Зв'яжіться з нами</button>
       </section>
-      <footer>
-        <a href="./index.html">
-          <img width="55" height="50" src="./images/logo.png" alt="logo" />
-          <p>ХАТИНА</p>
-          <p>притулок для тварин</p>
-        </a>
-        <p>Приєднутесь до нас в соціальних мережах</p>
-        <ul>
-          <li>
-            <ul>
-              <li><a href="">Про нас</a></li>
-              <li><a href="">Наші умови</a></li>
-              <li><a href="">Наша команда</a></li>
-              <li><a href="">сторія створення</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><a href="">Вірні друзі</a></li>
-              <li><a href="">Обрати друга</a></li>
-              <li><a href="">Щасливчики</a></li>
-              <li><a href="">Стати волонтером</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <a href="">Локаця</a>
-            </ul>
-            <ul>
-              <a href="">Контакти</a>
-            </ul>
-            <ul>
-              <a href="">Інормація</a>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><a href="">Допомогти матеріально:</a></li>
-              <li><a href="">ГО “ХАТИНА”</a></li>
-              <li><a href="">ЄДРПОУ: 123456789</a></li>
-              <li><a href="">Карта Приватбанку</a></li>
-              <li><a href="">4141 2929 4646 1111</a></li>
-              <li><a href="">Прокопів Петро Павлович</a></li>
-            </ul>
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                  >
-                    <path
-                      d="M32 16C32 24.8366 24.8366 32 16 32C7.16345 32 0 24.8366 0 16C0 7.16345 7.16345 0 16 0C24.8366 0 32 7.16345 32 16Z"
-                      fill="#202053"
-                    />
-                    <path
-                      d="M13.44 20.8V31.68C13.44 31.8567 13.5833 32 13.76 32H18.24C18.4167 32 18.56 31.8567 18.56 31.68V20.8C18.56 20.6233 18.7033 20.48 18.88 20.48H22.08C22.2567 20.48 22.4 20.3367 22.4 20.16V16.32C22.4 16.1433 22.2567 16 22.08 16H18.88C18.7033 16 18.56 15.8569 18.56 15.6802V12.8C18.56 11.52 20.16 10.88 20.8 10.88H22.72C22.8967 10.88 23.04 10.7367 23.04 10.56V6.72C23.04 6.54327 22.8968 6.4 22.72 6.4H18.56C15.488 6.4 13.44 9.6 13.44 11.52V15.68C13.44 15.8567 13.2967 16 13.12 16H9.92C9.74327 16 9.6 16.1433 9.6 16.32V20.16C9.6 20.3367 9.74327 20.48 9.92 20.48H13.12C13.2967 20.48 13.44 20.6233 13.44 20.8Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="33"
-                    height="32"
-                    viewBox="0 0 33 32"
-                    fill="none"
-                  >
-                    <rect
-                      x="0.5"
-                      width="32"
-                      height="32"
-                      rx="5"
-                      fill="#202053"
-                    />
-                    <circle cx="27" cy="6.5" r="2.5" fill="white" />
-                    <path
-                      d="M16.5003 23.0832C20.4123 23.0832 23.5837 19.9119 23.5837 15.9998C23.5837 12.0878 20.4123 8.9165 16.5003 8.9165C12.5883 8.9165 9.41699 12.0878 9.41699 15.9998C9.41699 19.9119 12.5883 23.0832 16.5003 23.0832Z"
-                      stroke="white"
-                      stroke-width="3.5"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://web.telegram.org/a/">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                  >
-                    <path
-                      d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
-                      fill="#202053"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M7.24252 15.8311C11.9068 13.7989 15.0171 12.4592 16.5734 11.8119C21.0167 9.96376 21.94 9.64271 22.5418 9.63211C22.6742 9.62978 22.9701 9.66258 23.1618 9.81813C23.3237 9.94948 23.3682 10.1269 23.3895 10.2514C23.4109 10.376 23.4374 10.6596 23.4163 10.8813C23.1755 13.4113 22.1336 19.5509 21.6036 22.3845C21.3793 23.5835 20.9377 23.9855 20.5101 24.0248C19.581 24.1103 18.8754 23.4108 17.9755 22.8209C16.5673 21.8978 15.7717 21.3232 14.4048 20.4224C12.8251 19.3814 13.8492 18.8092 14.7494 17.8742C14.985 17.6295 19.0789 13.9058 19.1581 13.568C19.168 13.5258 19.1772 13.3683 19.0837 13.2851C18.9901 13.202 18.8521 13.2304 18.7524 13.253C18.6112 13.2851 16.3615 14.772 12.0035 17.7138C11.365 18.1523 10.7866 18.3659 10.2684 18.3547C9.6971 18.3424 8.59818 18.0317 7.78125 17.7661C6.77925 17.4404 5.98288 17.2682 6.05222 16.7151C6.08834 16.427 6.48511 16.1323 7.24252 15.8311Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p>Всі права захищено reserved@hatyna.ua</p>
-      </footer>
     </main>
+    <footer class="footer">
+      <a href="./index.html">
+        <img width="55" height="50" src="./images/logo.png" alt="logo" />
+        <p>ХАТИНА</p>
+        <p>притулок для тварин</p>
+      </a>
+      <p>Приєднутесь до нас в соціальних мережах</p>
+      <ul>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              d="M32 16C32 24.8366 24.8366 32 16 32C7.16345 32 0 24.8366 0 16C0 7.16345 7.16345 0 16 0C24.8366 0 32 7.16345 32 16Z"
+              fill="#202053"
+            />
+            <path
+              d="M13.44 20.8V31.68C13.44 31.8567 13.5833 32 13.76 32H18.24C18.4167 32 18.56 31.8567 18.56 31.68V20.8C18.56 20.6233 18.7033 20.48 18.88 20.48H22.08C22.2567 20.48 22.4 20.3367 22.4 20.16V16.32C22.4 16.1433 22.2567 16 22.08 16H18.88C18.7033 16 18.56 15.8569 18.56 15.6802V12.8C18.56 11.52 20.16 10.88 20.8 10.88H22.72C22.8967 10.88 23.04 10.7367 23.04 10.56V6.72C23.04 6.54327 22.8968 6.4 22.72 6.4H18.56C15.488 6.4 13.44 9.6 13.44 11.52V15.68C13.44 15.8567 13.2967 16 13.12 16H9.92C9.74327 16 9.6 16.1433 9.6 16.32V20.16C9.6 20.3367 9.74327 20.48 9.92 20.48H13.12C13.2967 20.48 13.44 20.6233 13.44 20.8Z"
+              fill="white"
+            />
+          </svg>
+          src="" alt="">
+        </li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="33"
+            height="32"
+            viewBox="0 0 33 32"
+            fill="none"
+          >
+            <rect x="0.5" width="32" height="32" rx="5" fill="#202053" />
+            <circle cx="27" cy="6.5" r="2.5" fill="white" />
+            <path
+              d="M16.5003 23.0832C20.4123 23.0832 23.5837 19.9119 23.5837 15.9998C23.5837 12.0878 20.4123 8.9165 16.5003 8.9165C12.5883 8.9165 9.41699 12.0878 9.41699 15.9998C9.41699 19.9119 12.5883 23.0832 16.5003 23.0832Z"
+              stroke="white"
+              stroke-width="3.5"
+            />
+          </svg>
+          src="" alt="">
+        </li>
+        <li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+              fill="#202053"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.24252 15.8311C11.9068 13.7989 15.0171 12.4592 16.5734 11.8119C21.0167 9.96376 21.94 9.64271 22.5418 9.63211C22.6742 9.62978 22.9701 9.66258 23.1618 9.81813C23.3237 9.94948 23.3682 10.1269 23.3895 10.2514C23.4109 10.376 23.4374 10.6596 23.4163 10.8813C23.1755 13.4113 22.1336 19.5509 21.6036 22.3845C21.3793 23.5835 20.9377 23.9855 20.5101 24.0248C19.581 24.1103 18.8754 23.4108 17.9755 22.8209C16.5673 21.8978 15.7717 21.3232 14.4048 20.4224C12.8251 19.3814 13.8492 18.8092 14.7494 17.8742C14.985 17.6295 19.0789 13.9058 19.1581 13.568C19.168 13.5258 19.1772 13.3683 19.0837 13.2851C18.9901 13.202 18.8521 13.2304 18.7524 13.253C18.6112 13.2851 16.3615 14.772 12.0035 17.7138C11.365 18.1523 10.7866 18.3659 10.2684 18.3547C9.6971 18.3424 8.59818 18.0317 7.78125 17.7661C6.77925 17.4404 5.98288 17.2682 6.05222 16.7151C6.08834 16.427 6.48511 16.1323 7.24252 15.8311Z"
+              fill="white"
+            />
+          </svg>
+          src="" alt="">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="">Про нас</a></li>
+            <li><a href="">Наші умови</a></li>
+            <li><a href="">Наша команда</a></li>
+            <li><a href="">Історія створення</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="">Вірні друзі</a></li>
+            <li><a href="">Обрати друга</a></li>
+            <li><a href="">Щасливчики</a></li>
+            <li><a href="">Стати волонтером</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="">Локація</a></li>
+            <li><a href="">Контакти</a></li>
+            <li><a href="">Інормація</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><a href="">Допомогти матеріально</a></li>
+            <li><a href="">ГО “ХАТИНА”</a></li>
+            <li><a href="">ЄДРПОУ: 123456789</a></li>
+            <li><a href="">Карта Приватбанку</a></li>
+            <li><a href="">4141 2929 4646 1111</a></li>
+            <li><a href="">Прокопів Петро Павлович</a></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
